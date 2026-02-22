@@ -16,7 +16,7 @@ const ProfileSection = () => {
 					<h2 className="text-lg md:text-xl text-gray-600 dark:text-gray-400">AI & IT Professional</h2>
 					<div className="h-px w-16 bg-gray-200 dark:bg-gray-700 mx-auto my-4" />
 					<p className="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs mx-auto leading-relaxed">
-						Experienced in managing enterprise systems, infrastructure reliability, and applied Machine Learning.
+						Experienced in applied Machine Learning, managing enterprise systems, and infrastructure reliability.
 					</p>
 				</div>
 
@@ -37,6 +37,19 @@ const ProfileSection = () => {
 							<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 						</svg>
 						<span className="text-sm text-gray-600 dark:text-gray-400">Vadodara, Gujarat, India</span>
+					</div>
+
+					<div className="pt-2 flex justify-center">
+						<a
+							href="/resume-download/resume.pdf"
+							download
+							className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700 transition-colors duration-200"
+						>
+							<svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+							</svg>
+							Download Resume
+						</a>
 					</div>
 
 					{/* Social Links */}

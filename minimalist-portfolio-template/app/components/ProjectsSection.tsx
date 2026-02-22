@@ -3,6 +3,7 @@ const ProjectsSection = () => {
         {
             title: 'Healthcare Triage Assistant - End-to-End ML Deployment',
             url: 'https://github.com/rishabhpatel9/Healthcare-Triage-Assistant',
+            liveDemoUrl: 'https://healthcare-triage-assistant.onrender.com/',
             highlights: [
                 'Built an application for non-clinical hospital staff to predict patient triage levels from vitals, enabling better prioritization.',
                 'Trained ML model on Synthetic Medical Triage Priority Dataset (Kaggle) using scikit-learn, pandas, seaborn, joblib.',
@@ -60,15 +61,30 @@ const ProjectsSection = () => {
                             <div className="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700">
                                 <div className="absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
                                 <div className="space-y-1">
-                                    <h4 className="text-md font-medium text-gray-900 dark:text-white">
-                                        {project.url ? (
-                                            <a href={project.url} target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-600 dark:text-blue-400">
-                                                {project.title}
+                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                        <h4 className="text-md font-medium text-gray-900 dark:text-white">
+                                            {project.url ? (
+                                                <a href={project.url} target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-600 dark:text-blue-400">
+                                                    {project.title}
+                                                </a>
+                                            ) : (
+                                                project.title
+                                            )}
+                                        </h4>
+                                        {project.liveDemoUrl && (
+                                            <a
+                                                href={project.liveDemoUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 transition-colors shrink-0 max-w-max"
+                                            >
+                                                Try Live Demo
+                                                <svg className="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                                </svg>
                                             </a>
-                                        ) : (
-                                            project.title
                                         )}
-                                    </h4>
+                                    </div>
                                     <ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed list-disc pl-4 space-y-1 mt-2">
                                         {project.highlights.map((highlight, hIdx) => (
                                             <li key={hIdx}>
