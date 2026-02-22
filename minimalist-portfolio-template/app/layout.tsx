@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: '[Your Name] - Developer',
+	title: '[Rishabh Patel] - AI & IT Professional',
 	description:
 		'Welcome to my portfolio! I am a passionate developer who believes in simplicity and effectiveness. I focus on creating straightforward solutions that solve real problems, with clean code and intuitive user experiences.',
 	keywords: [
@@ -31,21 +31,21 @@ export const metadata: Metadata = {
 		'Web Development',
 		'Frontend Development',
 		'Backend Development',
-		'[Your Name]',
+		'[Rishabh Patel]',
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: '[Rishabh Patel]' }],
+	creator: '[Rishabh Patel]',
 	openGraph: {
-		title: '[Your Name] - Developer Portfolio',
+		title: '[Rishabh Patel] - AI & IT Professional Portfolio',
 		description: 'Passionate developer creating simple and effective solutions. Explore my projects and development approach.',
-		url: 'https://your-domain.com',
-		siteName: '[Your Name] - Portfolio',
+		url: 'https://rish.click',
+		siteName: '[Rishabh Patel] - Portfolio',
 		images: [
 			{
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Developer Portfolio',
+				alt: '[Rishabh Patel] - AI & IT Professional Portfolio',
 			},
 		],
 		locale: 'en_US',
