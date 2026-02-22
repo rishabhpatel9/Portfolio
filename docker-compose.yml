@@ -4,12 +4,14 @@ services:
         container_name: portfolio-site
         restart: unless-stopped
         volumes:
-            - ./main-site:/usr/share/nginx/html # Put your future website files in an 'html' folder
+            - ./minimalist-portfolio-template:/usr/share/nginx/html:ro
+        ports:
+            - "8080:80"
 
     tunnel:
         image: cloudflare/cloudflared:latest
         container_name: cloudflare-tunnel
         restart: unless-stopped
-        command: tunnel run --token eyJhIjoiNTQxOGYyN2E2ZjhhZDk1MGM5Y2JjZjNkODk4MDBhZmEiLCJ0IjoiODFhMzIxOGEtYTEyNS00ZmU0LTg1MDItMzcyOTMyY2M2MWY2IiwicyI6IlltVmpOR00zT0dVdFltRTVOeTAwTWpRNUxXRmtZbVF0WVRobVpEQmhNMkpsTldWaiJ9
+        command: tunnel run --token ${CLOUDFLARE_TOKEN}
         environment:
-            - TUNNEL_TOKEN=eyJhIjoiNTQxOGYyN2E2ZjhhZDk1MGM5Y2JjZjNkODk4MDBhZmEiLCJ0IjoiODFhMzIxOGEtYTEyNS00ZmU0LTg1MDItMzcyOTMyY2M2MWY2IiwicyI6IlltVmpOR00zT0dVdFltRTVOeTAwTWpRNUxXRmtZbVF0WVRobVpEQmhNMkpsTldWaiJ9
+            - TUNNEL_TOKEN=${CLOUDFLARE_TOKEN}
