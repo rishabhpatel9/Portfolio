@@ -1,12 +1,10 @@
 services:
     portfolio:
-        image: nginx:alpine
+        build: ./minimalist-portfolio-template
         container_name: portfolio-site
         restart: unless-stopped
-        volumes:
-            - ./minimalist-portfolio-template:/usr/share/nginx/html:ro
         ports:
-            - "8080:80"
+            - "3636:80"
 
     tunnel:
         image: cloudflare/cloudflared:latest
