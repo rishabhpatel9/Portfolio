@@ -1,6 +1,16 @@
 const ProjectsSection = () => {
     const projects = [
         {
+            title: 'CCTV Threat Detection - Real-Time Computer Vision Pipeline',
+            url: 'https://github.com/rishabhpatel9/CCTV-Threat-Detection',
+            highlights: [
+                'Built an end-to-end computer vision pipeline to analyze live CCTV video feeds, automatically detecting security threats like weapons and violence to enable rapid incident response.',
+                'Trained and integrated a multi-model architecture combining YOLOv8, SlowFast and pre-trained I3D ResNet-50.',
+                'Deployed full stack with FastAPI (backend), Streamlit (live stream and upload frontends), and Docker (containerization).',
+                'Engineered a custom rule-based fusion layer to combine simultaneous multi-model inferences into a unified threat score.',
+            ]
+        },
+        {
             title: 'Healthcare Triage Assistant - End-to-End ML Deployment',
             url: 'https://github.com/rishabhpatel9/Healthcare-Triage-Assistant',
             liveDemoUrl: 'https://healthcare-triage-assistant.onrender.com/',
