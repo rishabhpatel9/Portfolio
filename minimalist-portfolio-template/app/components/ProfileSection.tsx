@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import portraitImg from '../../public/portrait.jpg';
+import portraitImg from '../../public/portrait.jpeg';
+import SkillsSection from './SkillsSection';
 
 const ProfileSection = () => {
 	return (
@@ -19,6 +20,8 @@ const ProfileSection = () => {
 						Experienced in applied Machine Learning, managing enterprise systems, and infrastructure reliability.
 					</p>
 				</div>
+
+				<SkillsSection />
 
 				<div className="space-y-4">
 					{/* Contact Info */}

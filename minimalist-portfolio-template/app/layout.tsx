@@ -32,27 +32,27 @@ export const metadata: Metadata = {
 	authors: [{ name: 'Rishabh Patel' }],
 	creator: 'Rishabh Patel',
 	openGraph: {
-		title: 'Rishabh Patel - AI & IT Professional',
-		description: 'AI & IT professional exploring machine learning, computer vision, and building secure IT infrastructure.',
-		url: 'https://rish.click',
-		siteName: 'Rishabh Patel - Portfolio',
+		title: "Rishabh Patel - AI & IT Professional",
+		description: "Portfolio of Rishabh Patel, showcasing experience in applied Machine Learning, managing enterprise systems, and infrastructure reliability.",
+		url: "https://rish.click",
+		siteName: "Rishabh Patel Portfolio",
 		images: [
 			{
-				url: '/portrait.jpg',
+				url: "/portrait.jpeg", // Must be an absolute URL or starting with '/'
 				width: 1200,
 				height: 630,
-				alt: 'Rishabh Patel - AI & IT Professional Portfolio',
+				alt: "Rishabh Patel - AI & IT Professional",
 			},
 		],
-		locale: 'en_US',
-		type: 'website',
+		locale: "en_US",
+		type: "website",
 	},
 	twitter: {
-		card: 'summary_large_image',
-		title: 'Rishabh Patel - AI & IT Professional',
-		description: 'AI & IT professional exploring machine learning, computer vision, and building secure IT infrastructure.',
-		creator: '@rishp9',
-		images: ['/portrait.jpg'],
+		card: "summary_large_image",
+		title: "Rishabh Patel - AI & IT Professional",
+		description: "Portfolio of Rishabh Patel, showcasing experience in applied Machine Learning, managing enterprise systems, and infrastructure reliability.",
+		images: ["/portrait.jpeg"], // Must be an absolute URL or starting with '/'
+		creator: "@rishabhpatel9",
 	},
 	robots: {
 		index: true,

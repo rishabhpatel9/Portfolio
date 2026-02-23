@@ -3,7 +3,7 @@ const ExperienceSection = () => {
 		{
 			role: 'Technical Services Analyst (Zone 1)',
 			company: 'HCA Healthcare',
-			period: 'Oct 2025 — Jan 2026',
+			period: 'Oct 2025 - Jan 2026',
 			location: 'London, UK',
 			highlights: [
 				'Enhanced infrastructure reliability by managing full device life cycle, ensuring 100% compliance with HCA security standards and driving continuous IT process improvements; earned 5 official recognitions for outstanding IT support.',
@@ -16,7 +16,7 @@ const ExperienceSection = () => {
 		{
 			role: 'Patient Access Officer',
 			company: 'HCA Healthcare',
-			period: 'Jul 2024 — Oct 2025',
+			period: 'Jul 2024 - Oct 2025',
 			location: 'London, UK',
 			highlights: [
 				'Managed patient scheduling and registration for 1000+ monthly cases across adult and pediatric services, maintaining accurate records in Meditech/SharePoint with strict GDPR compliance; streamlined insurance workflows by coordinating with providers, quoting, invoicing, and payments, cutting claim turnaround by 15% and reducing outstanding invoices.',
@@ -26,7 +26,7 @@ const ExperienceSection = () => {
 		{
 			role: 'Technical Support Analyst',
 			company: "The Baker's Nest",
-			period: 'Oct 2018 — Oct 2021',
+			period: 'Oct 2018 - Oct 2021',
 			location: 'Vadodara, Gujarat',
 			highlights: [
 				'Managed IT infrastructure (Windows Active Directory, MS Office Suite), delivering onsite technical support and hardware/software upgrades to ensure 99% uptime and extend device lifecycle.',
@@ -35,7 +35,7 @@ const ExperienceSection = () => {
 		{
 			role: 'Web Developer',
 			company: "The Baker's Nest",
-			period: 'Sep 2017 — Oct 2018',
+			period: 'Sep 2017 - Oct 2018',
 			location: 'Vadodara, Gujarat',
 			highlights: [
 				'Designed and maintained WordPress/WooCommerce site with integrated payment processing and SEO, driving a 25% increase in online sales and ensuring accurate product cataloging.',
@@ -44,7 +44,7 @@ const ExperienceSection = () => {
 		{
 			role: '.NET Developer (Internship)',
 			company: 'Sannibh Technologies',
-			period: 'May 2019 — May 2019',
+			period: 'May 2019 - May 2019',
 			location: 'Vadodara, Gujarat',
 			highlights: [
 				'Developed a booking system in .NET with SQL backend, optimizing database schema to improve query performance.',

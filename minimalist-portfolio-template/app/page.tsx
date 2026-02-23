@@ -1,5 +1,4 @@
 import ProfileSection from './components/ProfileSection';
-import SkillsSection from './components/SkillsSection';
 import ExperienceSection from './components/ExperienceSection';
 import ProjectsSection from './components/ProjectsSection';
 import CertificatesSection from './components/CertificatesSection';
@@ -15,11 +14,6 @@ export default function MinimalistPortfolio() {
 
 				{/* Right Column - Skills, Projects, Experience, Certificates */}
 				<div className="md:col-span-3 flex flex-col md:overflow-y-auto">
-					{/* Skills Section */}
-					<div className="">
-						<SkillsSection />
-					</div>
-
 					{/* Projects Section */}
 					<div>
 						<ProjectsSection />
