@@ -13,3 +13,34 @@ services:
         command: tunnel run --token ${CLOUDFLARE_TOKEN}
         environment:
             - TUNNEL_TOKEN=${CLOUDFLARE_TOKEN}
+
+    cctv-api:
+        build:
+            context: ./CCTV-Threat-Detection
+            dockerfile: Dockerfile.backend
+        container_name: cctv-threat-api
+        restart: unless-stopped
+        expose:
+            - "8000"
+        volumes:
+            - ./CCTV-Threat-Detection:/app
+        environment:
+            - PYTHONUNBUFFERED=1
+        command: uvicorn api:app --host 0.0.0.0 --port 8000
+
+    cctv-app:
+        build:
+            context: ./CCTV-Threat-Detection
+            dockerfile: Dockerfile.frontend
+        container_name: cctv-threat-streamlit-app
+        restart: unless-stopped
+        expose:
+            - "8501"
+        volumes:
+            - ./CCTV-Threat-Detection:/app
+        environment:
+            - PYTHONUNBUFFERED=1
+            - API_URL=http://cctv-api:8000/predict
+        command: streamlit run app/streamlit-app.py --server.port 8501 --server.address 0.0.0.0
+        depends_on:
+            - cctv-api
