@@ -39,6 +39,7 @@ const ProjectsSection = () => {
         {
             title: 'Controlling Operating System and Applications using Hand Motion Gestures',
             url: 'https://github.com/rishabhpatel9/Gesture-Control',
+            demoVideoUrl: 'https://youtu.be/5vxY9YvVFOA',
             highlights: [
                 'Created a Python and OpenCV based system that controls applications and OS in a Linux environment using motion gestures from a laptop webcam based on a gesture recognition model trained using supervised machine learning.',
                 'Application dependent gesture mapping to execute different commands with the use of PyautoGUI.',
@@ -55,28 +56,28 @@ const ProjectsSection = () => {
                     <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
                 </div>
 
-                <div className="space-y-6">
+                <div className="flex flex-col">
                     {projects.map((project, idx) => (
-                        <div key={idx} className="relative">
-                            <div className="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-                                <div className="absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
-                                <div className="space-y-1">
-                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                                        <h4 className="text-md font-medium text-gray-900 dark:text-white">
-                                            {project.url ? (
-                                                <a href={project.url} target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-600 dark:text-blue-400">
-                                                    {project.title}
-                                                </a>
-                                            ) : (
-                                                project.title
-                                            )}
-                                        </h4>
+                        <div key={idx} className="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700 pb-6 last:pb-0">
+                            <div className="absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
+                            <div className="space-y-1">
+                                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                    <h4 className="text-md font-medium text-gray-900 dark:text-white">
+                                        {project.url ? (
+                                            <a href={project.url} target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-600 dark:text-blue-400">
+                                                {project.title}
+                                            </a>
+                                        ) : (
+                                            project.title
+                                        )}
+                                    </h4>
+                                    <div className="flex items-center gap-2 shrink-0">
                                         {project.liveDemoUrl && (
                                             <a
                                                 href={project.liveDemoUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 transition-colors shrink-0 max-w-max"
+                                                className="inline-flex items-center px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 transition-colors max-w-max"
                                             >
                                                 Try Live Demo
                                                 <svg className="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -84,22 +85,35 @@ const ProjectsSection = () => {
                                                 </svg>
                                             </a>
                                         )}
+                                        {project.demoVideoUrl && (
+                                            <a
+                                                href={project.demoVideoUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 transition-colors max-w-max"
+                                            >
+                                                See Demo Video
+                                                <svg className="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 12 6-12 6V1Z" />
+                                                </svg>
+                                            </a>
+                                        )}
                                     </div>
-                                    <ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed list-disc pl-4 space-y-1 mt-2">
-                                        {project.highlights.map((highlight, hIdx) => (
-                                            <li key={hIdx}>
-                                                {highlight.includes(': ') ? (
-                                                    <>
-                                                        <strong className="text-gray-800 dark:text-gray-200">{highlight.split(': ')[0]}:</strong>
-                                                        {' ' + highlight.split(': ').slice(1).join(': ')}
-                                                    </>
-                                                ) : (
-                                                    highlight
-                                                )}
-                                            </li>
-                                        ))}
-                                    </ul>
                                 </div>
+                                <ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed list-disc pl-4 space-y-1 mt-2">
+                                    {project.highlights.map((highlight, hIdx) => (
+                                        <li key={hIdx}>
+                                            {highlight.includes(': ') ? (
+                                                <>
+                                                    <strong className="text-gray-800 dark:text-gray-200">{highlight.split(': ')[0]}:</strong>
+                                                    {' ' + highlight.split(': ').slice(1).join(': ')}
+                                                </>
+                                            ) : (
+                                                highlight
+                                            )}
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     ))}

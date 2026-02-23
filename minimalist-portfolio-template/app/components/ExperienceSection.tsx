@@ -60,27 +60,24 @@ const ExperienceSection = () => {
 					<div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
 				</div>
 
-				<div className="space-y-6">
+				<div className="flex flex-col">
 					{experiences.map((exp, idx) => (
-						<div key={idx} className="relative">
-							<div className="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-								<div className="absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
-
-								<div className="space-y-1">
-									<div className="flex flex-col md:flex-row md:items-center md:justify-between">
-										<h4 className="text-md font-medium text-gray-900 dark:text-white">{exp.role}</h4>
-										<span className="text-sm text-gray-600 dark:text-gray-400 shrink-0">{exp.period}</span>
-									</div>
-									<div className="flex flex-col md:flex-row md:items-center md:justify-between">
-										<p className="text-sm font-medium text-gray-700 dark:text-gray-300">{exp.company}</p>
-										<p className="text-sm text-gray-500 dark:text-gray-400 italic">{exp.location}</p>
-									</div>
-									<ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed list-disc pl-4 space-y-1 mt-2">
-										{exp.highlights.map((highlight, hIdx) => (
-											<li key={hIdx}>{highlight}</li>
-										))}
-									</ul>
+						<div key={idx} className="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700 pb-6 last:pb-0">
+							<div className="absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
+							<div className="space-y-1">
+								<div className="flex flex-col md:flex-row md:items-center md:justify-between">
+									<h4 className="text-md font-medium text-gray-900 dark:text-white">{exp.role}</h4>
+									<span className="text-sm text-gray-600 dark:text-gray-400 shrink-0">{exp.period}</span>
 								</div>
+								<div className="flex flex-col md:flex-row md:items-center md:justify-between">
+									<p className="text-sm font-medium text-gray-700 dark:text-gray-300">{exp.company}</p>
+									<p className="text-sm text-gray-500 dark:text-gray-400 italic">{exp.location}</p>
+								</div>
+								<ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed list-disc pl-4 space-y-1 mt-2">
+									{exp.highlights.map((highlight, hIdx) => (
+										<li key={hIdx}>{highlight}</li>
+									))}
+								</ul>
 							</div>
 						</div>
 					))}
