@@ -3,6 +3,7 @@ const ProjectsSection = () => {
         {
             title: 'CCTV Threat Detection - Real-Time Computer Vision Pipeline',
             url: 'https://github.com/rishabhpatel9/CCTV-Threat-Detection',
+            liveDemoUrl: 'https://cctvdemo.rish.click/',
             highlights: [
                 'Built an end-to-end computer vision pipeline to analyze live CCTV video feeds, automatically detecting security threats like weapons and violence to enable rapid incident response.',
                 'Trained and integrated a multi-model architecture combining YOLOv8, SlowFast and pre-trained I3D ResNet-50.',
