@@ -29,7 +29,8 @@ const ExperienceSection = () => {
 			period: 'Oct 2018 - Oct 2021',
 			location: 'Vadodara, Gujarat',
 			highlights: [
-				'Managed IT infrastructure (Windows Active Directory, MS Office Suite), delivering onsite technical support and hardware/software upgrades to ensure 99% uptime and extend device lifecycle.',
+				'Managed company issued devices, ensuring seamless operation through software installations, network setup, and device integration. Key duties included deploying the Microsoft Office suite, configuring network access, and setting up third-party devices like the Cricut Explorer 2. Provided onsite technical support, troubleshooting user issues, and performing hardware fixes/upgrades to maintain efficiency and reliability.',
+				'Also developed product designs for compatibility with Cricut devices, ensuring seamless fabrication into final physical products.',
 			],
 		},
 		{
@@ -38,7 +39,12 @@ const ExperienceSection = () => {
 			period: 'Sep 2017 - Oct 2018',
 			location: 'Vadodara, Gujarat',
 			highlights: [
-				'Designed and maintained WordPress/WooCommerce site with integrated payment processing and SEO, driving a 25% increase in online sales and ensuring accurate product cataloging.',
+				'Designed and developed a cutting edge WordPress website, integrating WooCommerce, payment processing, and SEO capabilities.',
+				'Collaborated with cross-functional teams to ensure seamless integration of key functionalities and deliver an exceptional user experience.',
+				'Implemented robust security measures and conducted thorough testing to ensure optimal performance and reliability.',
+				'Utilized effective SEO strategies to enhance website visibility and boost organic traffic.',
+				'Proactively monitored website analytics and made data driven decisions to continuously optimize site performance.',
+				'Demonstrated strong problem solving skills by troubleshooting and resolving technical issues promptly and efficiently.',
 			],
 		},
 		{
@@ -47,7 +53,10 @@ const ExperienceSection = () => {
 			period: 'May 2019 - May 2019',
 			location: 'Vadodara, Gujarat',
 			highlights: [
-				'Developed a booking system in .NET with SQL backend, optimizing database schema to improve query performance.',
+				'Developed a highly efficient time slot management/booking system for a housing society, utilizing .NET framework and SQL database technology.',
+				'Designed and implemented a robust database structure to store and manage time slots for future events, ensuring seamless utilization of common amenities.',
+				'Integrated secure user login functionality, enabling individuals to book time slots using their unique login IDs.',
+				'Implemented active event booking features, ensuring seamless and hassle-free utilization of common amenities for all society members.',
 			],
 		},
 	];
