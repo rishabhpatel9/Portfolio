@@ -41,6 +41,6 @@ services:
         environment:
             - PYTHONUNBUFFERED=1
             - API_URL=http://cctv-api:8000/predict
-        command: streamlit run app/streamlit-app.py --server.port 8501 --server.address 0.0.0.0
+        command: streamlit run app/streamlit-webcam.py --server.port 8501 --server.address 0.0.0.0
         depends_on:
             - cctv-api
