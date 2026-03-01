@@ -46,3 +46,12 @@ services:
         command: streamlit run app/streamlit-webcam.py --server.port 8501 --server.address 0.0.0.0
         depends_on:
             - cctv-api
+
+    autoheal:
+        image: willfarrell/autoheal:latest
+        container_name: autoheal
+        restart: unless-stopped
+        environment:
+            - AUTOHEAL_CONTAINER_LABEL=all
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock:ro
