@@ -1,6 +1,12 @@
 const CertificatesSection = () => {
     const certificates = [
         {
+            name: 'Foundation: Introduction to LangChain - Python',
+            issuer: 'LangChain Academy',
+            date: 'Mar 2026',
+            url: 'https://academy.langchain.com/certificates/tbwbp4yzox',
+        },
+        {
             name: 'Google Project Management Specialization',
             issuer: 'Coursera',
             date: 'Dec 2025',
