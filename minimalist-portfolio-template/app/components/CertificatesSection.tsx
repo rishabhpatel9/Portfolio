@@ -1,6 +1,12 @@
 const CertificatesSection = () => {
     const certificates = [
         {
+            name: 'Quickstart: LangGraph Essentials - Python',
+            issuer: 'LangChain Academy',
+            date: 'Mar 2026',
+            url: 'https://academy.langchain.com/certificates/iw5ag06ohw',
+        },
+        {
             name: 'Foundation: Introduction to LangChain - Python',
             issuer: 'LangChain Academy',
             date: 'Mar 2026',
