@@ -1,6 +1,17 @@
 const ProjectsSection = () => {
     const projects = [
         {
+            title: 'Intelligent Research Assistant - GenAI Agentic Workflow',
+            url: 'https://github.com/rishabhpatel9/Intelligent-Research-Assistant',
+            liveDemoUrl: 'https://irademo.rish.click/',
+            highlights: [
+                'Built a GenAI powered intelligent agent that dynamically automates complex research workflows by intelligently searching, summarizing, fact checking, and synthesizing information.',
+                'Engineered an intelligent query routing system using LangGraph and local LLMs (via LM Studio) to orchestrate multi-step workflows including search, summarization, and rigorous fact checking.',
+                'Developed a full-stack Progressive Web App (PWA) featuring a FastAPI backend and a modern Gradio interface, delivering structured, publication ready reports.',
+                'Integrated LangSmith for deep debugging and evaluation of reasoning traces, fully containerizing the system with Docker and UV for rapid deployment.',
+            ]
+        },
+        {
             title: 'CCTV Threat Detection - Real-Time Computer Vision Pipeline',
             url: 'https://github.com/rishabhpatel9/CCTV-Threat-Detection',
             liveDemoUrl: 'https://cctvdemo.rish.click/',
