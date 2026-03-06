@@ -5,10 +5,10 @@ const ProjectsSection = () => {
             url: 'https://github.com/rishabhpatel9/Intelligent-Research-Assistant',
             liveDemoUrl: 'https://irademo.rish.click/',
             highlights: [
-                'Built a GenAI powered intelligent agent that dynamically automates complex research workflows by intelligently searching, summarizing, fact checking, and synthesizing information.',
-                'Engineered an intelligent query routing system using LangGraph and local LLMs (via LM Studio) to orchestrate multi-step workflows including search, summarization, and rigorous fact checking.',
-                'Developed a full-stack Progressive Web App (PWA) featuring a FastAPI backend and a modern Gradio interface, delivering structured, publication ready reports.',
-                'Integrated LangSmith for deep debugging and evaluation of reasoning traces, fully containerizing the system with Docker and UV for rapid deployment.',
+                'Built a privacy first GenAI powered intelligent agent in Python to dynamically automate complex research workflows, including web scraping (BeautifulSoup4), summarizing, fact checking, and synthesizing information.',
+                'Engineered an intelligent query routing system using LangGraph and local LLMs (via LM Studio) to orchestrate multi-step agentic workflows alongside the Tavily API for real time web search capabilities.',
+                'Developed a full stack Progressive Web App (PWA) with a FastAPI and Pydantic backend, connected to a modern Gradio frontend to deliver structured, publication ready reports.',
+                'Integrated LangSmith for deep debugging and evaluation of LLM reasoning traces, fully containerizing the system with Docker and the ultra fast UV package manager for rapid local deployments.',
             ]
         },
         {
