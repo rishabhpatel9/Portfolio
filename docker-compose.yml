@@ -55,3 +55,30 @@ services:
             - AUTOHEAL_CONTAINER_LABEL=all
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock:ro
+
+    ira-backend:
+        build:
+            context: ./Intelligent-Research-Assistant
+            dockerfile: backend/Dockerfile
+        container_name: intelligent-research-backend
+        restart: unless-stopped
+        ports:
+            - "8100:8000"
+        env_file:
+            - ./Intelligent-Research-Assistant/.env
+        environment:
+            - LM_STUDIO_URL=http://host.docker.internal:1234/v1/chat/completions
+            - PYTHONUNBUFFERED=1
+
+    ira-frontend:
+        build:
+            context: ./Intelligent-Research-Assistant/frontend
+            dockerfile: Dockerfile
+        container_name: intelligent-research-frontend
+        restart: unless-stopped
+        ports:
+            - "7860:7860"
+        environment:
+            - API_URL=http://ira-backend:8000/query
+        depends_on:
+            - ira-backend
