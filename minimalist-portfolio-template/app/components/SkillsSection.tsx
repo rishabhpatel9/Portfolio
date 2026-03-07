@@ -1,19 +1,19 @@
 const SkillsSection = () => {
 	const skills = [
 		{
-			category: 'Languages & Tools',
+			category: 'Languages & Web Tech',
 			items: [
 				'Python',
 				'C/C++',
 				'HTML/CSS',
 				'JavaScript',
-				'Streamlit',
 				'FastAPI',
-				'Linux Shell Scripting',
-				'Git',
-				'GitHub',
-				'Bitbucket',
-
+				'Streamlit',
+				'Gradio',
+				'Pydantic',
+				'WordPress',
+				'cPanel',
+				'SEO'
 			],
 			icon: (
 				<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
@@ -22,10 +22,10 @@ const SkillsSection = () => {
 			),
 		},
 		{
-			category: 'AI & Data',
+			category: 'AI, Data & Concepts',
 			items: [
-				'Machine Learning',
 				'TensorFlow',
+				'PyTorch',
 				'Scikit-learn',
 				'NumPy',
 				'Pandas',
@@ -34,8 +34,14 @@ const SkillsSection = () => {
 				'OpenCV',
 				'AIF360',
 				'Joblib',
-				'Data Wrangling',
+				'GenAI Orchestration',
+				'LangGraph',
+				'LangChain',
+				'LangSmith',
+				'Multi-model Fusion',
+				'Transfer Learning',
 				'Prompt Engineering',
+				'Data Wrangling'
 			],
 			icon: (
 				<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
@@ -44,16 +50,22 @@ const SkillsSection = () => {
 			),
 		},
 		{
-			category: 'Enterprise IT',
+			category: 'Tools, DevOps & APIs',
 			items: [
-				'End-to-End ML Deployment',
 				'Docker',
 				'Modular Containerization',
 				'Render',
 				'Reproducibility',
-				'WordPress',
-				'cPanel',
-				'SEO',
+				'End-to-End ML Deployment',
+				'Git',
+				'GitHub',
+				'Bitbucket',
+				'Linux Shell Scripting',
+				'Tavily API',
+				'OpenRouter',
+				'LM-Studio',
+				'OpenAI API',
+				'Gemini AI'
 			],
 			icon: (
 				<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
