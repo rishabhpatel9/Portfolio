@@ -5,10 +5,11 @@ const ProjectsSection = () => {
             url: 'https://github.com/rishabhpatel9/Intelligent-Research-Assistant',
             liveDemoUrl: 'https://irademo.rish.click/',
             highlights: [
-                'Built a privacy first GenAI powered intelligent agent in Python to dynamically automate complex research workflows, including web scraping (BeautifulSoup4), summarizing, fact checking, and synthesizing information.',
-                'Engineered an intelligent query routing system using LangGraph and local LLMs (via LM Studio) to orchestrate multi-step agentic workflows alongside the Tavily API for real time web search capabilities.',
-                'Developed a full stack Progressive Web App (PWA) with a FastAPI and Pydantic backend, connected to a modern Gradio frontend to deliver structured, publication ready reports.',
-                'Integrated LangSmith for deep debugging and evaluation of LLM reasoning traces, fully containerizing the system with Docker and the ultra fast UV package manager for rapid local deployments.',
+                'Engineered a sophisticated multi-agent swarm architecture using LangGraph and LangChain to automate end-to-end research workflows, transforming simple queries into comprehensive, publication ready reports.',
+                'Developed specialized agents (Orchestrator, Scout, Reader, Critic, Synthesizer) for autonomous task decomposition, multi source searching (DuckDuckGo, Wikipedia, ArXiv), deep web scraping (BeautifulSoup4), and recursive fact checking (ReAct loop).',
+                'Integrated "Human in the Loop" planning with an interactive research plan editor and real time "Thinking Log" for transparent agent reasoning and user intervention.',
+                'Prioritized data privacy by integrating local LLMs via LM Studio (Qwen3.5 9B, Qwen3.5 2B or Qwen3.5 0.8B for fallback) and optimized reliability with an SQLite caching layer and "self healing" JSON parsing (json-repair).',
+                'Built a full stack Progressive Web App (PWA) using FastAPI/Pydantic and Gradio, safeguarded using captcha, fully containerized with Docker and the UV package manager for rapid, portable deployment.',
             ]
         },
         {
