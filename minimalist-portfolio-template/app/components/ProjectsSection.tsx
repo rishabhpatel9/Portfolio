@@ -26,7 +26,8 @@ const ProjectsSection = () => {
         {
             title: 'Healthcare Triage Assistant - End-to-End ML Deployment',
             url: 'https://github.com/rishabhpatel9/Healthcare-Triage-Assistant',
-            liveDemoUrl: 'https://healthcare-triage-assistant.onrender.com/',
+            // liveDemoUrl: 'https://healthcare-triage-assistant.onrender.com/',
+            liveDemoUrl: 'https://htademo.rish.click/',
             highlights: [
                 'Built an application for non-clinical hospital staff to predict patient triage levels from vitals, enabling better prioritization.',
                 'Trained ML model on Synthetic Medical Triage Priority Dataset (Kaggle) using scikit-learn, pandas, seaborn, joblib.',
