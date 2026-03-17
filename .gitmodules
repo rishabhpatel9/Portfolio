@@ -1,3 +1,6 @@
 [submodule "Intelligent-Research-Assistant"]
 	path = Intelligent-Research-Assistant
 	url = https://github.com/rishabhpatel9/Intelligent-Research-Assistant.git
+[submodule "Healthcare-Triage-Assistant"]
+	path = Healthcare-Triage-Assistant
+	url = https://github.com/rishabhpatel9/Healthcare-Triage-Assistant.git
