@@ -82,6 +82,7 @@ services:
             - "7860:7860"
         environment:
             - API_URL=http://ira-backend:8000/query
+            - GRADIO_ANALYTICS_ENABLED=False
         depends_on:
             - ira-backend
     healthcare-backend:
