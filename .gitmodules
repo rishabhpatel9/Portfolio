@@ -4,3 +4,6 @@
 [submodule "Healthcare-Triage-Assistant"]
 	path = Healthcare-Triage-Assistant
 	url = https://github.com/rishabhpatel9/Healthcare-Triage-Assistant.git
+[submodule "CCTV-Threat-Detection"]
+	path = CCTV-Threat-Detection
+	url = https://github.com/rishabhpatel9/CCTV-Threat-Detection

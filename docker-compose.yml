@@ -16,8 +16,8 @@ services:
 
     cctv-api:
         build:
-            context: ./CCTV-Threat-Detection
-            dockerfile: Dockerfile.backend
+            context: ./CCTV-Threat-Detection/backend
+            dockerfile: Dockerfile
             args:
                 USE_GPU: ${USE_GPU:-false}
         container_name: cctv-threat-api
@@ -25,27 +25,27 @@ services:
         expose:
             - "8000"
         volumes:
-            - ./CCTV-Threat-Detection:/app
+            - ./CCTV-Threat-Detection/backend:/app
         environment:
             - PYTHONUNBUFFERED=1
         command: uvicorn api:app --host 0.0.0.0 --port 8000
 
     cctv-app:
         build:
-            context: ./CCTV-Threat-Detection
-            dockerfile: Dockerfile.frontend
+            context: ./CCTV-Threat-Detection/frontend
+            dockerfile: Dockerfile
         container_name: cctv-threat-streamlit-app
         restart: unless-stopped
         expose:
             - "8501"
         volumes:
-            - ./CCTV-Threat-Detection:/app
+            - ./CCTV-Threat-Detection/frontend:/app
         environment:
             - PYTHONUNBUFFERED=1
             - API_URL=http://cctv-api:8000/predict
             - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
             - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
-        command: streamlit run app/streamlit-webcam.py --server.port 8501 --server.address 0.0.0.0
+        command: streamlit run streamlit-webcam.py --server.port 8501 --server.address 0.0.0.0
         depends_on:
             - cctv-api
 
